@@ -1,0 +1,12 @@
+spring:
+  influxdb:
+    server: http://127.0.0.1:8086
+    username: root
+    password: root
+    database: NOAA_water_database
+    enableBatch: true
+    batch:
+      actions: 1000
+      flushDuration: 1000
+      jitterDuration: 1000
+      bufferLimit: 1000
